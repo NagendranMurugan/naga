@@ -1,0 +1,41 @@
+body
+{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+.loading
+{
+    width: auto;
+}
+.spin
+{
+    width: 10em;
+    height: 10em;
+    border-top: 1em solid darkblue;
+    border-right: 1em solid transparent;
+    border-radius: 50%;
+    margin: auto;
+    animation: spin 2s linear infinite;
+
+}
+.load
+{
+    width: 1em;
+    height: 1em;
+    background-color: 1em solid darkblue;
+    border-radius: 50%;
+    margin-left: 8.5em;
+    margin-top: 0.5em;
+}
+
+@keyframes spin
+{
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+
